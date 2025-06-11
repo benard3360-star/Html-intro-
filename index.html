@@ -3,34 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        img.profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .content {
+            margin-left: 180px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        p.description {
+            padding: 15px;
+            background-color: #eef3f7;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Profile Picture -->
-    <img src="https://raw.githubusercontent.com/benard3360-star/Html-intro-/main/pictuure.JPG" 
-         alt="Profile Picture" 
-         width="150" height="150" 
-         style="position: absolute; top: 0; left: 0; margin: 10px; border-radius: 10px; box-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/benard3360-star/Html-intro-/main/pictuure.JPG" 
+             alt="Profile Picture" 
+             class="profile-pic">
 
-    <h1 style="margin-left: 170px;">Benard Omondi Ogol</h1>
+        <div class="content">
+            <h1>Benard Omondi Ogol</h1>
 
-    <p style="margin-left: 170px;">
-        Hello! I'm Benard, a data scientist who loves exploring new technologies—especially now with the introduction of AI, which is becoming a game changer in every field. Being part of this team would give me the opportunity to improve my skills and sharpen my software development abilities to help me integrate deployed models in real-world scenarios.
-    </p>
+            <p class="description">
+                Hello! I'm Benard, a data scientist who loves exploring new technologies—
+                especially now with the introduction of AI, which is becoming a game changer
+                in every field. Being part of this team would give me the opportunity to improve
+                my skills and sharpen my software development abilities to help me integrate
+                deployed models in real-world scenarios.
+            </p>
 
-    <h2 style="margin-left: 170px;">My Hobbies</h2>
-    <ul style="margin-left: 170px;">
-        <li>Coding</li>
-        <li>Reading sci-fi books</li>
-        <li>Photography</li>
-        <li>Hiking</li>
-        <li>Playing guitar</li>
-    </ul>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Reading sci-fi books</li>
+                <li>Photography</li>
+                <li>Hiking</li>
+                <li>Playing guitar</li>
+            </ul>
 
-    <p style="margin-left: 170px;">
-        Visit my favorite website: 
-        <a href="https://azure.microsoft.com/en-gb/pricing/purchase-options/azure-account/search" target="_blank">
-            Azure (Microsoft)
-        </a>
-    </p>
+            <div class="links">
+                <p>
+                    <a href="my_favorite_things.html">Check out my favorite things</a>
+                </p>
+                <p>
+                    Visit my favorite website:
+                    <a href="https://azure.microsoft.com/en-gb/pricing/purchase-options/azure-account/search" target="_blank">
+                        Azure (Microsoft)
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
